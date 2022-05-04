@@ -68,17 +68,61 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam maxime nihil quis temporibus
-              molestias, magni libero, recusandae laborum voluptatibus repudiandae corporis corrupti assumenda nulla
-              quas quo vitae quia adipisci suscipit iusto voluptatum, numquam eligendi in aliquam. Ipsum impedit maxime
-              cupiditate. Odit, minus. Eius sint magnam neque. Voluptates, dolorem praesentium?
-            </p>
             <button class="modal-close" data-modal-close>
-              <svg width="14px" height="14px">
+              <svg width="11px" height="11px">
                 <use href="./images/svg/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
+
+            <form>
+              <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+              <ul class="form-list">
+                <li class="form-item">
+                  <label class="form-label" for="user-name">Имя</label>
+                  <input class="form-input" type="text" name="name" id="user-name" />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/svg/icons.svg#icon-user"></use>
+                  </svg>
+                </li>
+
+                <li class="form-item">
+                  <label class="form-label" for="user-tel">Телефон</label>
+                  <input class="form-input" type="tel" name="tel" id="user-tel" />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/svg/icons.svg#icon-tel"></use>
+                  </svg>
+                </li>
+
+                <li class="form-item">
+                  <label class="form-label" for="user-email">Почта</label>
+                  <input class="form-input" type="email" name="email" id="user-email" />
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/svg/icons.svg#icon-email"></use>
+                  </svg>
+                </li>
+
+                <li class="form-item">
+                  <label class="form-label" for="user-coment">Коментарий</label>
+                  <textarea
+                    class="form-input user-coment"
+                    name="coment"
+                    id="user-coment"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </li>
+              </ul>
+
+              <div class="form-checkbox">
+                <label class="checkbox-label">
+                  <input class="checkbox" type="checkbox" name="agree" />
+                  <span class="checkbox-icon"></span>
+                  Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#"> Условия договора</a>
+                </label>
+              </div>
+
+              <button class="form-btn" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -87,6 +131,7 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества студии</h2>
+
           <ul class="advantages list">
             <li class="advantages-item">
               <div class="icon-wrapper">
@@ -94,11 +139,13 @@
                   <use href="./images/svg/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
+
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
+
             <li class="advantages-item">
               <div class="icon-wrapper">
                 <svg width="70" height="70">
@@ -386,7 +433,7 @@
           </address>
         </div>
         <div class="join-us">
-          <h2 class="join-us-title">присоединяйтесь</h2>
+          <b class="join-us-title">присоединяйтесь</b>
           <ul class="wrapper-join-us">
             <li class="footer-social-link">
               <a class="social-link" href="#">
@@ -413,6 +460,19 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="mailing">
+          <b class="mailing-title">Подпишитесь на рассылку</b>
+
+          <form class="footer-form">
+            <input class="footer-form-input" type="email" name="email" id="footer-user-email" placeholder="E-mail" />
+            <button class="footer-form-btn" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/svg/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

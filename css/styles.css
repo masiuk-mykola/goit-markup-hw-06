@@ -311,6 +311,10 @@ ul {
   text-align: left;
 }
 
+.form-item:last-child {
+  margin-bottom: 0px;
+}
+
 .form-label {
   margin-bottom: 4px;
   font-style: normal;
@@ -361,8 +365,6 @@ ul {
   font-size: 12px;
   line-height: 1.1666;
   letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-checkbox {
@@ -731,6 +733,7 @@ ul {
 }
 
 .adress-wrapper {
+  flex-grow: 1;
   margin-right: 70px;
 }
 
